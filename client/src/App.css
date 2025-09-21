@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.auth {
+  @apply bg-gradient-to-r from-purple-600 via-pink-500 to-purple-800;
+  @apply flex justify-center items-center min-h-screen;
+  @apply p-4;
+}
+
+/* Inner card */
+.auth-card {
+  @apply bg-white/90 backdrop-blur-md shadow-2xl rounded-3xl p-8 max-w-md w-full;
+  @apply transition-transform transform hover:scale-105;
+}
+
+/* Headings */
+.auth-card h3 {
+  @apply text-4xl font-extrabold text-center text-purple-800 mb-6;
+}
+
+/* Input fields */
+.auth-card input {
+  @apply border-2 border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-purple-700 hover:bg-purple-800 text-white font-semibold py-3 px-6 rounded-lg w-full transition-all;
+}
+
+/* Links */
+.auth-card a {
+  @apply text-purple-700 hover:text-purple-900 underline transition;
+}
+
+.bg-bar {
+  @apply bg-gradient-to-r from-[#16a34a] to-[#15803d];
+}
+
+
+
+.btn-primary {
+  @apply bg-orange-500 hover:bg-orange-600 text-white w-full py-2 rounded-xl transition-all duration-300 shadow-md;
+}
+
+
+.nav-link {
+  @apply text-gray-100 hover:text-white relative transition-all duration-200 select-none;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.mob-link {
+  @apply text-gray-100 hover:text-white block p-1 select-none text-lg;
+}
