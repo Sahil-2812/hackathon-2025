@@ -16,6 +16,7 @@ import DonationDetail from "./DonationDetail/DonationDetail";
 import DonationForm from "./DonationForm";
 
 import donationData from "../../data/donationData";
+import Blog from "./Blog/Blog";
 
 const stripePromise = loadStripe("pk_test_51S9ohiLnDXly5OqPLajKL2SIwnWsDB23iU9ZPEX0A68VsFktdSAVFG4CjgRBYpGgE4riKvxAYPGU4TgNpIQ8MPN900nhbrIFX7"); // your Stripe publishable key
 
@@ -40,6 +41,7 @@ const Frontend = () => {
         <Route path="faq" element={<FAQ />} />
         <Route path="privacy" element={<PrivacyPolicy />} />
         <Route path="terms" element={<Terms />} />
+        <Route path="blog" element={<Blog/>} />
       </Routes>
       <Footer />
     </main>
